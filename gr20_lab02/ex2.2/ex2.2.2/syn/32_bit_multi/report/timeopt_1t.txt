@@ -1,0 +1,225 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL_1
+Version: S-2021.06-SP4
+Date   : Thu Apr  3 08:35:20 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Multiplier_2[0]
+              (input port)
+  Endpoint: result[63] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_1         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  Multiplier_2[0] (in)                                    0.00       0.00 f
+  U3908/ZN (INV_X2)                                       0.12       0.12 r
+  U3753/ZN (NAND2_X2)                                     0.18       0.30 f
+  U3816/ZN (AND2_X2)                                      0.14       0.44 f
+  U4986/ZN (NOR2_X1)                                      0.09       0.53 r
+  r595/B[0] (BOOTHMUL_1_DW01_add_30)                      0.00       0.53 r
+  r595/U2/ZN (AND2_X1)                                    0.05       0.58 r
+  r595/U1_1/CO (FA_X1)                                    0.07       0.64 r
+  r595/U1_2/S (FA_X1)                                     0.11       0.75 f
+  r595/SUM[2] (BOOTHMUL_1_DW01_add_30)                    0.00       0.75 f
+  U5377/Z (MUX2_X1)                                       0.08       0.83 f
+  r599/A[1] (BOOTHMUL_1_DW01_add_29)                      0.00       0.83 f
+  r599/U1_1/CO (FA_X1)                                    0.11       0.93 f
+  r599/U1_2/CO (FA_X1)                                    0.09       1.02 f
+  r599/U1_3/CO (FA_X1)                                    0.09       1.11 f
+  r599/U1_4/CO (FA_X1)                                    0.09       1.20 f
+  r599/U1_5/CO (FA_X1)                                    0.09       1.30 f
+  r599/U1_6/CO (FA_X1)                                    0.09       1.39 f
+  r599/U1_7/CO (FA_X1)                                    0.09       1.48 f
+  r599/U1_8/CO (FA_X1)                                    0.09       1.57 f
+  r599/U1_9/CO (FA_X1)                                    0.09       1.66 f
+  r599/U1_10/CO (FA_X1)                                   0.09       1.75 f
+  r599/U1_11/CO (FA_X1)                                   0.09       1.84 f
+  r599/U1_12/CO (FA_X1)                                   0.09       1.93 f
+  r599/U1_13/CO (FA_X1)                                   0.09       2.02 f
+  r599/U1_14/CO (FA_X1)                                   0.09       2.11 f
+  r599/U1_15/CO (FA_X1)                                   0.09       2.20 f
+  r599/U1_16/CO (FA_X1)                                   0.09       2.29 f
+  r599/U1_17/CO (FA_X1)                                   0.09       2.38 f
+  r599/U1_18/CO (FA_X1)                                   0.09       2.47 f
+  r599/U1_19/CO (FA_X1)                                   0.09       2.56 f
+  r599/U1_20/CO (FA_X1)                                   0.09       2.66 f
+  r599/U1_21/CO (FA_X1)                                   0.09       2.75 f
+  r599/U1_22/CO (FA_X1)                                   0.09       2.84 f
+  r599/U1_23/CO (FA_X1)                                   0.09       2.93 f
+  r599/U1_24/CO (FA_X1)                                   0.09       3.02 f
+  r599/U1_25/CO (FA_X1)                                   0.09       3.11 f
+  r599/U1_26/CO (FA_X1)                                   0.09       3.20 f
+  r599/U1_27/CO (FA_X1)                                   0.09       3.29 f
+  r599/U1_28/CO (FA_X1)                                   0.09       3.38 f
+  r599/U1_29/CO (FA_X1)                                   0.09       3.47 f
+  r599/U1_30/CO (FA_X1)                                   0.09       3.56 f
+  r599/U1_31/S (FA_X1)                                    0.10       3.67 f
+  r599/SUM[31] (BOOTHMUL_1_DW01_add_29)                   0.00       3.67 f
+  U5835/Z (MUX2_X1)                                       0.09       3.75 f
+  r603/A[30] (BOOTHMUL_1_DW01_add_28)                     0.00       3.75 f
+  r603/U1_30/CO (FA_X1)                                   0.11       3.86 f
+  r603/U1_31/S (FA_X1)                                    0.10       3.97 f
+  r603/SUM[31] (BOOTHMUL_1_DW01_add_28)                   0.00       3.97 f
+  U5832/Z (MUX2_X1)                                       0.09       4.05 f
+  r607/A[30] (BOOTHMUL_1_DW01_add_27)                     0.00       4.05 f
+  r607/U1_30/CO (FA_X1)                                   0.11       4.17 f
+  r607/U1_31/S (FA_X1)                                    0.10       4.27 f
+  r607/SUM[31] (BOOTHMUL_1_DW01_add_27)                   0.00       4.27 f
+  U5777/Z (MUX2_X1)                                       0.09       4.36 f
+  r609/A[30] (BOOTHMUL_1_DW01_add_26)                     0.00       4.36 f
+  r609/U1_30/CO (FA_X1)                                   0.11       4.47 f
+  r609/U1_31/S (FA_X1)                                    0.10       4.57 f
+  r609/SUM[31] (BOOTHMUL_1_DW01_add_26)                   0.00       4.57 f
+  U5768/Z (MUX2_X1)                                       0.09       4.66 f
+  r615/A[30] (BOOTHMUL_1_DW01_add_25)                     0.00       4.66 f
+  r615/U1_30/CO (FA_X1)                                   0.11       4.77 f
+  r615/U1_31/S (FA_X1)                                    0.10       4.87 f
+  r615/SUM[31] (BOOTHMUL_1_DW01_add_25)                   0.00       4.87 f
+  U5715/Z (MUX2_X1)                                       0.09       4.96 f
+  r619/A[30] (BOOTHMUL_1_DW01_add_24)                     0.00       4.96 f
+  r619/U1_30/CO (FA_X1)                                   0.11       5.07 f
+  r619/U1_31/S (FA_X1)                                    0.10       5.18 f
+  r619/SUM[31] (BOOTHMUL_1_DW01_add_24)                   0.00       5.18 f
+  U5704/Z (MUX2_X1)                                       0.09       5.26 f
+  r623/A[30] (BOOTHMUL_1_DW01_add_23)                     0.00       5.26 f
+  r623/U1_30/CO (FA_X1)                                   0.11       5.37 f
+  r623/U1_31/S (FA_X1)                                    0.10       5.48 f
+  r623/SUM[31] (BOOTHMUL_1_DW01_add_23)                   0.00       5.48 f
+  U5653/Z (MUX2_X1)                                       0.09       5.56 f
+  r625/A[30] (BOOTHMUL_1_DW01_add_22)                     0.00       5.56 f
+  r625/U1_30/CO (FA_X1)                                   0.11       5.68 f
+  r625/U1_31/S (FA_X1)                                    0.10       5.78 f
+  r625/SUM[31] (BOOTHMUL_1_DW01_add_22)                   0.00       5.78 f
+  U5640/Z (MUX2_X1)                                       0.09       5.87 f
+  r629/A[30] (BOOTHMUL_1_DW01_add_21)                     0.00       5.87 f
+  r629/U1_30/CO (FA_X1)                                   0.11       5.98 f
+  r629/U1_31/S (FA_X1)                                    0.10       6.08 f
+  r629/SUM[31] (BOOTHMUL_1_DW01_add_21)                   0.00       6.08 f
+  U5591/Z (MUX2_X1)                                       0.09       6.17 f
+  r635/A[30] (BOOTHMUL_1_DW01_add_20)                     0.00       6.17 f
+  r635/U1_30/CO (FA_X1)                                   0.11       6.28 f
+  r635/U1_31/S (FA_X1)                                    0.10       6.38 f
+  r635/SUM[31] (BOOTHMUL_1_DW01_add_20)                   0.00       6.38 f
+  U5576/Z (MUX2_X1)                                       0.09       6.47 f
+  r639/A[30] (BOOTHMUL_1_DW01_add_19)                     0.00       6.47 f
+  r639/U1_30/CO (FA_X1)                                   0.11       6.58 f
+  r639/U1_31/S (FA_X1)                                    0.10       6.69 f
+  r639/SUM[31] (BOOTHMUL_1_DW01_add_19)                   0.00       6.69 f
+  U5529/Z (MUX2_X1)                                       0.09       6.77 f
+  r641/A[30] (BOOTHMUL_1_DW01_add_18)                     0.00       6.77 f
+  r641/U1_30/CO (FA_X1)                                   0.11       6.89 f
+  r641/U1_31/S (FA_X1)                                    0.10       6.99 f
+  r641/SUM[31] (BOOTHMUL_1_DW01_add_18)                   0.00       6.99 f
+  U5512/Z (MUX2_X1)                                       0.09       7.07 f
+  r647/A[30] (BOOTHMUL_1_DW01_add_17)                     0.00       7.07 f
+  r647/U1_30/CO (FA_X1)                                   0.11       7.19 f
+  r647/U1_31/S (FA_X1)                                    0.10       7.29 f
+  r647/SUM[31] (BOOTHMUL_1_DW01_add_17)                   0.00       7.29 f
+  U5467/Z (MUX2_X1)                                       0.09       7.38 f
+  r649/A[30] (BOOTHMUL_1_DW01_add_16)                     0.00       7.38 f
+  r649/U1_30/CO (FA_X1)                                   0.11       7.49 f
+  r649/U1_31/S (FA_X1)                                    0.10       7.59 f
+  r649/SUM[31] (BOOTHMUL_1_DW01_add_16)                   0.00       7.59 f
+  U5447/Z (MUX2_X1)                                       0.09       7.68 f
+  r653/A[30] (BOOTHMUL_1_DW01_add_15)                     0.00       7.68 f
+  r653/U1_30/CO (FA_X1)                                   0.11       7.79 f
+  r653/U1_31/S (FA_X1)                                    0.10       7.90 f
+  r653/SUM[31] (BOOTHMUL_1_DW01_add_15)                   0.00       7.90 f
+  U5406/Z (MUX2_X1)                                       0.09       7.98 f
+  r657/A[30] (BOOTHMUL_1_DW01_add_14)                     0.00       7.98 f
+  r657/U1_30/CO (FA_X1)                                   0.11       8.09 f
+  r657/U1_31/S (FA_X1)                                    0.10       8.20 f
+  r657/SUM[31] (BOOTHMUL_1_DW01_add_14)                   0.00       8.20 f
+  U5382/Z (MUX2_X1)                                       0.09       8.28 f
+  r663/A[30] (BOOTHMUL_1_DW01_add_13)                     0.00       8.28 f
+  r663/U1_30/CO (FA_X1)                                   0.11       8.40 f
+  r663/U1_31/S (FA_X1)                                    0.10       8.50 f
+  r663/SUM[31] (BOOTHMUL_1_DW01_add_13)                   0.00       8.50 f
+  U5341/Z (MUX2_X1)                                       0.09       8.59 f
+  r665/A[30] (BOOTHMUL_1_DW01_add_12)                     0.00       8.59 f
+  r665/U1_30/CO (FA_X1)                                   0.11       8.70 f
+  r665/U1_31/S (FA_X1)                                    0.10       8.80 f
+  r665/SUM[31] (BOOTHMUL_1_DW01_add_12)                   0.00       8.80 f
+  U5313/Z (MUX2_X1)                                       0.09       8.89 f
+  r669/A[30] (BOOTHMUL_1_DW01_add_11)                     0.00       8.89 f
+  r669/U1_30/CO (FA_X1)                                   0.11       9.00 f
+  r669/U1_31/S (FA_X1)                                    0.10       9.10 f
+  r669/SUM[31] (BOOTHMUL_1_DW01_add_11)                   0.00       9.10 f
+  U5280/Z (MUX2_X1)                                       0.09       9.19 f
+  r673/A[30] (BOOTHMUL_1_DW01_add_10)                     0.00       9.19 f
+  r673/U1_30/CO (FA_X1)                                   0.11       9.30 f
+  r673/U1_31/S (FA_X1)                                    0.10       9.41 f
+  r673/SUM[31] (BOOTHMUL_1_DW01_add_10)                   0.00       9.41 f
+  U5248/Z (MUX2_X1)                                       0.09       9.49 f
+  r677/A[30] (BOOTHMUL_1_DW01_add_9)                      0.00       9.49 f
+  r677/U1_30/CO (FA_X1)                                   0.11       9.61 f
+  r677/U1_31/S (FA_X1)                                    0.10       9.71 f
+  r677/SUM[31] (BOOTHMUL_1_DW01_add_9)                    0.00       9.71 f
+  U5219/Z (MUX2_X1)                                       0.09       9.79 f
+  r681/A[30] (BOOTHMUL_1_DW01_add_8)                      0.00       9.79 f
+  r681/U1_30/CO (FA_X1)                                   0.11       9.91 f
+  r681/U1_31/S (FA_X1)                                    0.10      10.01 f
+  r681/SUM[31] (BOOTHMUL_1_DW01_add_8)                    0.00      10.01 f
+  U5183/Z (MUX2_X1)                                       0.09      10.10 f
+  r685/A[30] (BOOTHMUL_1_DW01_add_7)                      0.00      10.10 f
+  r685/U1_30/CO (FA_X1)                                   0.11      10.21 f
+  r685/U1_31/S (FA_X1)                                    0.10      10.31 f
+  r685/SUM[31] (BOOTHMUL_1_DW01_add_7)                    0.00      10.31 f
+  U5158/Z (MUX2_X1)                                       0.09      10.40 f
+  r689/A[30] (BOOTHMUL_1_DW01_add_6)                      0.00      10.40 f
+  r689/U1_30/CO (FA_X1)                                   0.11      10.51 f
+  r689/U1_31/S (FA_X1)                                    0.10      10.62 f
+  r689/SUM[31] (BOOTHMUL_1_DW01_add_6)                    0.00      10.62 f
+  U5118/Z (MUX2_X1)                                       0.09      10.70 f
+  r693/A[30] (BOOTHMUL_1_DW01_add_5)                      0.00      10.70 f
+  r693/U1_30/CO (FA_X1)                                   0.11      10.81 f
+  r693/U1_31/S (FA_X1)                                    0.10      10.92 f
+  r693/SUM[31] (BOOTHMUL_1_DW01_add_5)                    0.00      10.92 f
+  U5097/Z (MUX2_X1)                                       0.09      11.00 f
+  r697/A[30] (BOOTHMUL_1_DW01_add_4)                      0.00      11.00 f
+  r697/U1_30/CO (FA_X1)                                   0.11      11.12 f
+  r697/U1_31/S (FA_X1)                                    0.10      11.22 f
+  r697/SUM[31] (BOOTHMUL_1_DW01_add_4)                    0.00      11.22 f
+  U5053/Z (MUX2_X1)                                       0.09      11.31 f
+  r701/A[30] (BOOTHMUL_1_DW01_add_3)                      0.00      11.31 f
+  r701/U1_30/CO (FA_X1)                                   0.11      11.42 f
+  r701/U1_31/S (FA_X1)                                    0.10      11.52 f
+  r701/SUM[31] (BOOTHMUL_1_DW01_add_3)                    0.00      11.52 f
+  U5036/Z (MUX2_X1)                                       0.09      11.61 f
+  r707/A[30] (BOOTHMUL_1_DW01_add_2)                      0.00      11.61 f
+  r707/U1_30/CO (FA_X1)                                   0.11      11.72 f
+  r707/U1_31/S (FA_X1)                                    0.10      11.82 f
+  r707/SUM[31] (BOOTHMUL_1_DW01_add_2)                    0.00      11.82 f
+  U5034/Z (MUX2_X1)                                       0.09      11.91 f
+  r709/A[30] (BOOTHMUL_1_DW01_add_1)                      0.00      11.91 f
+  r709/U1_30/CO (FA_X1)                                   0.11      12.02 f
+  r709/U1_31/S (FA_X1)                                    0.10      12.13 f
+  r709/SUM[31] (BOOTHMUL_1_DW01_add_1)                    0.00      12.13 f
+  U3968/Z (MUX2_X1)                                       0.09      12.21 f
+  r715/A[30] (BOOTHMUL_1_DW01_add_0)                      0.00      12.21 f
+  r715/U1_30/CO (FA_X1)                                   0.11      12.32 f
+  r715/U1_31/S (FA_X1)                                    0.13      12.45 r
+  r715/SUM[31] (BOOTHMUL_1_DW01_add_0)                    0.00      12.45 r
+  U3914/Z (MUX2_X1)                                       0.04      12.49 r
+  result[63] (out)                                        0.00      12.50 r
+  data arrival time                                                 12.50
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

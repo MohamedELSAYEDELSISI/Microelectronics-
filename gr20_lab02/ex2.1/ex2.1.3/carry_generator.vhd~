@@ -1,0 +1,165 @@
+library ieee; 
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity CARRY_GENERATOR is
+      generic (NBIT : integer := 32;
+	       NBIT_PER_BLOCK: integer := 4);
+      
+      port (A :	in std_logic_vector(NBIT-1 downto 0);
+            B : in std_logic_vector(NBIT-1 downto 0);
+	    Cin : in std_logic;
+	    Co : out std_logic_vector((NBIT/NBIT_PER_BLOCK)-1 downto 0));
+      
+end CARRY_GENERATOR;
+
+
+architecture STRUCTURAL of CARRY_GENERATOR is
+
+function log2 (A : integer; round: natural) return integer is
+ variable N : integer := 0;
+ variable As : integer := A;
+ begin
+   while As >= 2 loop
+      As:= (As+round) / 2;
+      N := N+1;
+   end loop;
+   return N;
+end function log2;
+
+function right_wire(col, row : natural) return natural is
+  variable ColU: unsigned(NBIT-1 downto 0);
+  begin
+    ColU := to_unsigned(col, NBIT);
+    if(row > 1) then
+       ColU(row-2 downto 0) := (others => '0');
+    end if;
+    return to_integer(Colu);
+end function right_wire;
+
+
+function condition(col, row : natural; BPB: integer) return boolean is
+  variable ColU : unsigned(NBIT-1 downto 0);
+  begin
+    ColU := to_unsigned(col, NBIT);
+    if (ColU(row-1)= '1') then
+      if (((col+1) mod 2**row)=0 or ((col+1) mod BPB)=0) then
+        return true;
+      end if;
+    end if;
+    return false;
+end function condition;
+
+function verify(col,row : natural; BPB: integer) return integer is
+  variable ty : integer := 0;
+  variable ColU : unsigned(NBIT-1 downto 0);
+  begin
+    ColU := to_unsigned(col, NBIT);
+    if condition(col, row, BPB) then
+       if (row-1 = log2(col, 0)) then
+         ty := 2;
+       else
+         ty := 1;
+       end if;
+    end if;
+    return ty;
+end function verify;
+
+component NETWORK_BLOCK is
+
+       port( A: in std_logic;
+             B: in std_logic;
+             P: out std_logic;
+             G: out std_logic);
+       
+end component;
+         
+component PG is
+
+       port(Pik: in std_logic;
+            Gik: in std_logic;
+            Gkj: in std_logic;
+            Pkj: in std_logic;
+            Pout: out std_logic;
+            Gout: out std_logic);
+  
+end component;
+
+component GENERATOR is
+
+       port(Gik: in std_logic;
+            Pik: in std_logic;
+            Gkj: in std_logic;
+            Gout: out std_logic);
+         
+end component;
+
+type vector is array (log2(NBIT,1) downto 0) of std_logic_vector(NBIT-1 downto 0);
+
+signal wire_P: vector;
+signal wire_G: vector;
+
+begin
+
+    wire_G(0)(0) <= Cin or (A(0) and B(0));
+    wire_P(0)(0) <= '0';
+    PG_NETWORK: for i in 1 to NBIT-1 generate
+      NET_B:NETWORK_BLOCK port map(A(i),B(i),wire_P(0)(i),wire_G(0)(i));  
+    end generate PG_NETWORK;
+    
+    CARRY_TREE:for col in 0 to NBIT-1 generate
+      layer: for row in 1 to log2(NBIT,1) generate
+
+        PGs: if (verify(col, row, NBIT_PER_BLOCK) = 1) generate
+          PG0 : PG port map (wire_P(row-1)(col),
+                             wire_G(row-1)(col),
+                             wire_G(row-1)(right_wire(col, row)-1),
+                             wire_P(row-1)(right_wire(col, row)-1),
+                             wire_P(row)(col),
+                             wire_G(row)(col));
+        end generate PGs;
+
+        Gs: if (verify(col, row, NBIT_PER_BLOCK) = 2) generate
+          G0: GENERATOR port map (wire_G(row-1)(col),
+                                  wire_P(row-1)(col),
+                                  wire_G(row-1)(right_wire(col, row)-1),
+                                  wire_G(row)(col));
+        end generate Gs;
+        
+        bypass: if (verify(col, row, NBIT_PER_BLOCK) = 0) generate
+          wire_P(row)(col) <= wire_P(row-1)(col);
+          wire_G(row)(col) <= wire_G (row-1)(col);
+        end generate bypass;
+        
+      end generate layer;
+    end generate CARRY_TREE;
+
+    CARRY_SELECT : for i in 1 to NBIT/NBIT_PER_BLOCK generate
+      Co(i-1) <= wire_G(log2(NBIT,1))((NBIT_PER_BLOCK*i)-1);
+    end generate CARRY_SELECT;
+    
+end STRUCTURAL;
+
+configuration CFG_CARRY_GENERATOR_STRUCTURAL of CARRY_GENERATOR is
+  for STRUCTURAL
+    for PG_NETWORK
+      for all: NETWORK_BLOCK
+          use configuration WORK.CFG_NETWORK_BLOCK_BEHAVIORAL;
+      end for;
+    end for;
+    for CARRY_TREE
+      for layer
+        for PGs
+          for all: PG
+            use configuration WORK.CFG_PG_BEHAVIORAL;
+          end for;
+        end for;
+        for Gs
+          for all: GENERATOR
+            use configuration WORK.CFG_GENERATOR_BEHAVIORAL;
+          end for;
+        end for;
+      end for;
+    end for;
+  end for;
+end CFG_CARRY_GENERATOR_STRUCTURAL;

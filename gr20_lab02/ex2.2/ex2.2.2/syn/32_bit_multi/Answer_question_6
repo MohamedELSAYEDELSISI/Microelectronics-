@@ -1,0 +1,7 @@
+In the path slack analysis, since I have only implemented the behavioral architecture, there are three rectangles, each containing a path from the input to the output bit, along with the corresponding slack values. For example, the path from the input multiplicand[1] to the output bit result[62] has a slack of -1.2476 ns, and the path from the input multiplicand[1] to the output bit result[63] also has the same slack value of -1.2476 ns.
+
+In the second slack rectangle, the slack values are lower than those in the first rectangle. For example, the highest slack value in the second slack rectangle occurs between the input bit multiplicand[1] and the output bit result[6], with a slack of -1.2092 ns.
+
+The best slack value, in terms of the least negative value, occurs between the input bit multiplicand[1] and the output bit result[59], with a slack of -1.09506 ns.
+
+Based on the best slack value of -1.09 ns and our constraint of 10 ns, the best achievable time that can bring the slack to 0 would be the sum of the previous constraint (10 ns) and the best slack value (1.09 ns), resulting in 11.09 ns. After considering the applied constraints, the maximum delay value is 11.2 ns, which brings the slack to 0. Therefore, the actual optimization achieved is from 12.50 ns to 11.20 ns, representing an improvement of 1.30 ns.

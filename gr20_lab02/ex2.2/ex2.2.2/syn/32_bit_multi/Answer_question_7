@@ -1,0 +1,3 @@
+In the previous timeopt_1t.txt (with no constraints), the data arrival time was 12.50 ns. After optimization, where we applied a maximum delay constraint of 10 ns between the two input ports and the output port, the data arrival time improved to 11.25 ns, as seen in timeopt_2t.txt. This shows a better enhancement when using high-effort compilation with the 10 ns constraint.
+
+However, when comparing to the desired constraint, the slack is negative, with a value of -1.25 ns overall. This indicates that although there was an optimization from 12.50 ns to 11.25 ns (a reduction of 1.25 ns), the result still does not meet the 10 ns constraint (as 10 ns - 11.25 ns = -1.25 ns), meaning the constraint requirement was not achieved.

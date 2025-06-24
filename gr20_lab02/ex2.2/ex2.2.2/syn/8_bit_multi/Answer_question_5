@@ -1,0 +1,7 @@
+In the behavioral architecture, there are two critical paths, and they are repeated among the worst 10 timing paths.
+
+The first critical path is from the least significant bit of multiplicand_1[0] (input multiplicand_1) to bit number 15 of the output vector, named result. This path has a delay of 2.85 ns.
+
+The second critical path is from the same input bit, multiplicand_1[0], to bit number 14 of the output vector, result. This path has the same delay of 2.85 ns, identical to the first critical path.
+
+

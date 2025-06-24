@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SIPISOALU
+Version: S-2021.06-SP4
+Date   : Sat Apr 19 01:04:59 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: control/CURRENT_STATE_reg[4]
+              (rising edge-triggered flip-flop)
+  Endpoint: STARTC (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SIPISOALU          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  control/CURRENT_STATE_reg[4]/CK (DFFR_X1)               0.00       0.00 r
+  control/CURRENT_STATE_reg[4]/Q (DFFR_X1)                0.10       0.10 f
+  control/U49/ZN (NOR3_X1)                                0.10       0.19 r
+  control/U18/ZN (NAND2_X1)                               0.05       0.24 f
+  control/U10/ZN (INV_X1)                                 0.04       0.29 r
+  control/startC (sipisoAluControl)                       0.00       0.29 r
+  STARTC (out)                                            0.00       0.29 r
+  data arrival time                                                  0.29
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

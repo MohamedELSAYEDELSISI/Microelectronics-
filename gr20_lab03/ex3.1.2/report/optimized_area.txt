@@ -1,0 +1,26 @@
+Report : area
+Design : register_file
+Version: S-2021.06-SP4
+Date   : Thu Apr 24 19:20:54 2025
+****************************************
+
+
+
+Number of ports:                          213
+Number of nets:                          9818
+Number of cells:                         7557
+Number of combinational cells:           5381
+Number of sequential cells:              2176
+Number of macros/black boxes:               0
+Number of buf/inv:                        280
+Number of references:                      16
+
+Combinational area:               6932.492204
+Buf/Inv area:                      267.596000
+Noncombinational area:            9839.871643
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 16772.363847
+Total area:                 undefined
+1

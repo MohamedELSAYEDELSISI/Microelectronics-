@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : RCA
+Version: S-2021.06-SP4
+Date   : Tue Mar 18 17:50:36 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port)
+  Endpoint: Co (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCA                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  A[0] (in)                                0.00       0.00 f
+  U33/ZN (OR2_X1)                          0.06       0.06 f
+  U32/ZN (AOI22_X1)                        0.05       0.11 r
+  U31/ZN (INV_X1)                          0.02       0.13 f
+  U30/ZN (AOI22_X1)                        0.06       0.19 r
+  U29/ZN (INV_X1)                          0.03       0.21 f
+  U28/ZN (OR2_X1)                          0.05       0.26 f
+  U27/ZN (AOI22_X1)                        0.05       0.31 r
+  U26/ZN (INV_X1)                          0.02       0.33 f
+  U25/ZN (AOI22_X1)                        0.06       0.39 r
+  U24/ZN (INV_X1)                          0.03       0.42 f
+  U23/ZN (OR2_X1)                          0.05       0.47 f
+  U22/ZN (AOI22_X1)                        0.05       0.52 r
+  U21/ZN (OAI22_X1)                        0.03       0.55 f
+  Co (out)                                 0.00       0.55 f
+  data arrival time                                   0.55
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

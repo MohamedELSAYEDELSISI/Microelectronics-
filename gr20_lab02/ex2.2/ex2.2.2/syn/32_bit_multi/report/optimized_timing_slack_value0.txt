@@ -1,0 +1,321 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL
+Version: S-2021.06-SP4
+Date   : Thu Apr  3 08:09:19 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Multiplicand_1[1]
+              (input port)
+  Endpoint: result[62] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  Multiplicand_1[1] (in)                                  0.00       0.00 f
+  U15970/ZN (INV_X1)                                      0.04       0.04 r
+  add_0_root_add_60_ni/A[1] (BOOTHMUL_DW01_inc_0)         0.00       0.04 r
+  add_0_root_add_60_ni/U12/ZN (AND2_X1)                   0.04       0.08 r
+  add_0_root_add_60_ni/U5/ZN (AND2_X2)                    0.04       0.12 r
+  add_0_root_add_60_ni/U2/Z (XOR2_X1)                     0.08       0.20 r
+  add_0_root_add_60_ni/SUM[3] (BOOTHMUL_DW01_inc_0)       0.00       0.20 r
+  U15675/ZN (NAND2_X1)                                    0.04       0.24 f
+  U14662/ZN (INV_X1)                                      0.04       0.28 r
+  r595/A[2] (BOOTHMUL_DW01_add_30)                        0.00       0.28 r
+  r595/U4/Z (XOR2_X1)                                     0.07       0.35 r
+  r595/U5/Z (XOR2_X1)                                     0.07       0.42 r
+  r595/SUM[2] (BOOTHMUL_DW01_add_30)                      0.00       0.42 r
+  U16137/ZN (NAND2_X1)                                    0.03       0.45 f
+  U13676/ZN (NAND2_X1)                                    0.04       0.48 r
+  r599/A[1] (BOOTHMUL_DW01_add_29)                        0.00       0.48 r
+  r599/U154/ZN (NAND2_X1)                                 0.04       0.52 f
+  r599/U51/ZN (NAND3_X1)                                  0.04       0.56 r
+  r599/U74/ZN (NAND2_X1)                                  0.03       0.59 f
+  r599/U4/ZN (NAND3_X1)                                   0.04       0.63 r
+  r599/U26/ZN (NAND2_X1)                                  0.04       0.67 f
+  r599/U9/ZN (NAND3_X1)                                   0.04       0.71 r
+  r599/U31/ZN (NAND2_X1)                                  0.03       0.74 f
+  r599/U32/ZN (NAND3_X1)                                  0.04       0.78 r
+  r599/U186/ZN (NAND2_X1)                                 0.04       0.82 f
+  r599/U35/ZN (NAND3_X1)                                  0.04       0.86 r
+  r599/U49/ZN (NAND2_X1)                                  0.04       0.90 f
+  r599/U86/ZN (NAND3_X1)                                  0.04       0.94 r
+  r599/U98/ZN (XNOR2_X1)                                  0.06       1.00 r
+  r599/SUM[7] (BOOTHMUL_DW01_add_29)                      0.00       1.00 r
+  U16374/ZN (AOI22_X1)                                    0.03       1.03 f
+  U16366/ZN (INV_X1)                                      0.05       1.07 r
+  r603/A[6] (BOOTHMUL_DW01_add_28)                        0.00       1.07 r
+  r603/U137/ZN (INV_X1)                                   0.03       1.10 f
+  r603/U138/ZN (NAND2_X1)                                 0.03       1.12 r
+  r603/U152/ZN (NAND2_X1)                                 0.03       1.15 f
+  r603/U112/Z (XOR2_X1)                                   0.07       1.22 f
+  r603/SUM[6] (BOOTHMUL_DW01_add_28)                      0.00       1.22 f
+  U16387/ZN (NAND2_X1)                                    0.03       1.25 r
+  U12691/ZN (NAND2_X1)                                    0.04       1.28 f
+  r607/A[5] (BOOTHMUL_DW01_add_27)                        0.00       1.28 f
+  r607/U1_5/CO (FA_X1)                                    0.11       1.39 f
+  r607/U1_6/S (FA_X1)                                     0.13       1.52 r
+  r607/SUM[6] (BOOTHMUL_DW01_add_27)                      0.00       1.52 r
+  U12938/ZN (NAND2_X1)                                    0.03       1.55 f
+  U12411/ZN (NAND2_X1)                                    0.04       1.58 r
+  r609/A[5] (BOOTHMUL_DW01_add_26)                        0.00       1.58 r
+  r609/U79/ZN (XNOR2_X1)                                  0.06       1.64 r
+  r609/U77/ZN (XNOR2_X1)                                  0.06       1.70 r
+  r609/SUM[5] (BOOTHMUL_DW01_add_26)                      0.00       1.70 r
+  U16268/ZN (NAND2_X1)                                    0.03       1.73 f
+  U13214/ZN (NAND2_X1)                                    0.04       1.76 r
+  r615/A[4] (BOOTHMUL_DW01_add_25)                        0.00       1.76 r
+  r615/U1_4/S (FA_X1)                                     0.12       1.88 f
+  r615/SUM[4] (BOOTHMUL_DW01_add_25)                      0.00       1.88 f
+  U14100/ZN (AOI22_X1)                                    0.06       1.94 r
+  U16381/ZN (INV_X1)                                      0.03       1.97 f
+  r619/A[3] (BOOTHMUL_DW01_add_24)                        0.00       1.97 f
+  r619/U1_3/S (FA_X1)                                     0.14       2.11 r
+  r619/SUM[3] (BOOTHMUL_DW01_add_24)                      0.00       2.11 r
+  U14089/ZN (NAND2_X1)                                    0.03       2.14 f
+  U13514/ZN (NAND2_X1)                                    0.03       2.17 r
+  r623/A[2] (BOOTHMUL_DW01_add_23)                        0.00       2.17 r
+  r623/U1_2/S (FA_X1)                                     0.11       2.28 f
+  r623/SUM[2] (BOOTHMUL_DW01_add_23)                      0.00       2.28 f
+  U16001/ZN (AOI22_X1)                                    0.06       2.34 r
+  U16124/ZN (INV_X1)                                      0.03       2.37 f
+  r625/A[1] (BOOTHMUL_DW01_add_22)                        0.00       2.37 f
+  r625/U127/ZN (NAND2_X1)                                 0.04       2.41 r
+  r625/U17/ZN (NAND3_X1)                                  0.04       2.45 f
+  r625/U102/ZN (NAND2_X1)                                 0.03       2.48 r
+  r625/U10/ZN (NAND3_X1)                                  0.04       2.52 f
+  r625/U1_3/CO (FA_X1)                                    0.10       2.62 f
+  r625/U1_4/S (FA_X1)                                     0.13       2.76 r
+  r625/SUM[4] (BOOTHMUL_DW01_add_22)                      0.00       2.76 r
+  U14118/ZN (NAND2_X1)                                    0.03       2.78 f
+  U13212/ZN (NAND2_X1)                                    0.04       2.82 r
+  r629/A[3] (BOOTHMUL_DW01_add_21)                        0.00       2.82 r
+  r629/U1_3/S (FA_X1)                                     0.12       2.94 f
+  r629/SUM[3] (BOOTHMUL_DW01_add_21)                      0.00       2.94 f
+  U16111/ZN (AOI22_X1)                                    0.06       2.99 r
+  U16267/ZN (INV_X1)                                      0.03       3.02 f
+  r635/A[2] (BOOTHMUL_DW01_add_20)                        0.00       3.02 f
+  r635/U1_2/CO (FA_X1)                                    0.10       3.13 f
+  r635/U1_3/CO (FA_X1)                                    0.09       3.22 f
+  r635/U1_4/CO (FA_X1)                                    0.09       3.31 f
+  r635/U1_5/CO (FA_X1)                                    0.09       3.40 f
+  r635/U1_6/CO (FA_X1)                                    0.09       3.49 f
+  r635/U1_7/CO (FA_X1)                                    0.10       3.59 f
+  r635/U43/ZN (NAND2_X1)                                  0.04       3.63 r
+  r635/U38/ZN (NAND3_X1)                                  0.04       3.67 f
+  r635/U37/ZN (NAND2_X1)                                  0.03       3.70 r
+  r635/U34/ZN (NAND3_X1)                                  0.04       3.74 f
+  r635/U31/ZN (OAI21_X1)                                  0.04       3.78 r
+  r635/U26/ZN (NAND2_X1)                                  0.04       3.81 f
+  r635/U23/ZN (XNOR2_X1)                                  0.06       3.87 f
+  r635/U24/ZN (XNOR2_X1)                                  0.05       3.93 f
+  r635/SUM[11] (BOOTHMUL_DW01_add_20)                     0.00       3.93 f
+  U16053/ZN (NAND2_X1)                                    0.03       3.95 r
+  U13443/ZN (NAND2_X1)                                    0.04       3.99 f
+  r639/A[10] (BOOTHMUL_DW01_add_19)                       0.00       3.99 f
+  r639/U8/ZN (XNOR2_X1)                                   0.06       4.05 f
+  r639/U9/ZN (XNOR2_X1)                                   0.06       4.11 f
+  r639/SUM[10] (BOOTHMUL_DW01_add_19)                     0.00       4.11 f
+  U14372/ZN (AND2_X1)                                     0.04       4.15 f
+  U12865/ZN (OR2_X2)                                      0.06       4.20 f
+  r641/A[9] (BOOTHMUL_DW01_add_18)                        0.00       4.20 f
+  r641/U48/ZN (XNOR2_X1)                                  0.06       4.26 f
+  r641/U49/ZN (XNOR2_X1)                                  0.06       4.32 f
+  r641/SUM[9] (BOOTHMUL_DW01_add_18)                      0.00       4.32 f
+  U14371/ZN (NAND2_X1)                                    0.03       4.34 r
+  U13441/ZN (NAND2_X1)                                    0.03       4.38 f
+  r647/A[8] (BOOTHMUL_DW01_add_17)                        0.00       4.38 f
+  r647/U1_8/CO (FA_X1)                                    0.11       4.49 f
+  r647/U1_9/CO (FA_X1)                                    0.10       4.58 f
+  r647/U33/ZN (NAND2_X1)                                  0.05       4.63 r
+  r647/U23/ZN (OAI21_X1)                                  0.04       4.67 f
+  r647/U27/ZN (NAND2_X1)                                  0.03       4.69 r
+  r647/U48/ZN (AND2_X1)                                   0.04       4.74 r
+  r647/U76/ZN (NAND2_X1)                                  0.03       4.76 f
+  r647/U72/ZN (NAND2_X1)                                  0.03       4.79 r
+  r647/U69/ZN (NAND2_X1)                                  0.03       4.82 f
+  r647/U67/ZN (AOI21_X1)                                  0.05       4.87 r
+  r647/U68/ZN (NOR2_X1)                                   0.03       4.90 f
+  r647/U1_14/CO (FA_X1)                                   0.09       4.99 f
+  r647/U1_15/CO (FA_X1)                                   0.09       5.08 f
+  r647/U1_16/S (FA_X1)                                    0.10       5.18 f
+  r647/SUM[16] (BOOTHMUL_DW01_add_17)                     0.00       5.18 f
+  U14261/ZN (AND2_X1)                                     0.04       5.22 f
+  U13011/ZN (OR2_X2)                                      0.06       5.28 f
+  r649/A[15] (BOOTHMUL_DW01_add_16)                       0.00       5.28 f
+  r649/U1_15/CO (FA_X1)                                   0.10       5.38 f
+  r649/U1_16/S (FA_X1)                                    0.13       5.51 r
+  r649/SUM[16] (BOOTHMUL_DW01_add_16)                     0.00       5.51 r
+  U16108/ZN (NAND2_X1)                                    0.03       5.53 f
+  U13682/ZN (NAND2_X1)                                    0.05       5.58 r
+  r653/A[15] (BOOTHMUL_DW01_add_15)                       0.00       5.58 r
+  r653/U32/ZN (XNOR2_X1)                                  0.07       5.65 r
+  r653/U17/Z (XOR2_X1)                                    0.06       5.71 r
+  r653/SUM[15] (BOOTHMUL_DW01_add_15)                     0.00       5.71 r
+  U16336/ZN (AND2_X1)                                     0.05       5.76 r
+  U12479/ZN (OR2_X2)                                      0.04       5.80 r
+  r657/A[14] (BOOTHMUL_DW01_add_14)                       0.00       5.80 r
+  r657/U57/ZN (XNOR2_X1)                                  0.06       5.86 r
+  r657/U81/ZN (XNOR2_X1)                                  0.06       5.92 r
+  r657/SUM[14] (BOOTHMUL_DW01_add_14)                     0.00       5.92 r
+  U16335/ZN (NAND2_X1)                                    0.03       5.95 f
+  U13693/ZN (NAND2_X1)                                    0.04       5.99 r
+  r663/A[13] (BOOTHMUL_DW01_add_13)                       0.00       5.99 r
+  r663/U1_13/S (FA_X1)                                    0.11       6.10 f
+  r663/SUM[13] (BOOTHMUL_DW01_add_13)                     0.00       6.10 f
+  U16281/ZN (AND2_X1)                                     0.04       6.14 f
+  U12358/ZN (OR2_X2)                                      0.06       6.20 f
+  r665/A[12] (BOOTHMUL_DW01_add_12)                       0.00       6.20 f
+  r665/U146/ZN (XNOR2_X1)                                 0.06       6.26 f
+  r665/U168/ZN (XNOR2_X1)                                 0.06       6.32 f
+  r665/SUM[12] (BOOTHMUL_DW01_add_12)                     0.00       6.32 f
+  U15925/ZN (NAND2_X1)                                    0.03       6.34 r
+  U13472/ZN (NAND2_X1)                                    0.04       6.38 f
+  r669/A[11] (BOOTHMUL_DW01_add_11)                       0.00       6.38 f
+  r669/U5/Z (BUF_X1)                                      0.04       6.42 f
+  r669/U90/ZN (NAND2_X1)                                  0.04       6.46 r
+  r669/U40/ZN (NAND3_X1)                                  0.04       6.50 f
+  r669/U104/ZN (NAND2_X1)                                 0.03       6.52 r
+  r669/U38/ZN (NAND3_X1)                                  0.04       6.56 f
+  r669/U1_13/CO (FA_X1)                                   0.10       6.66 f
+  r669/U85/ZN (NAND2_X1)                                  0.03       6.69 r
+  r669/U31/ZN (NAND3_X1)                                  0.04       6.73 f
+  r669/U1_15/S (FA_X1)                                    0.13       6.86 r
+  r669/SUM[15] (BOOTHMUL_DW01_add_11)                     0.00       6.86 r
+  U12190/ZN (AND2_X1)                                     0.04       6.90 r
+  U11237/ZN (OR2_X1)                                      0.05       6.95 r
+  r673/A[14] (BOOTHMUL_DW01_add_10)                       0.00       6.95 r
+  r673/U76/ZN (XNOR2_X1)                                  0.06       7.01 r
+  r673/U83/ZN (XNOR2_X1)                                  0.06       7.07 r
+  r673/SUM[14] (BOOTHMUL_DW01_add_10)                     0.00       7.07 r
+  U13785/ZN (NAND2_X1)                                    0.03       7.10 f
+  U13554/ZN (NAND2_X1)                                    0.04       7.13 r
+  r677/A[13] (BOOTHMUL_DW01_add_9)                        0.00       7.13 r
+  r677/U108/ZN (XNOR2_X1)                                 0.06       7.20 r
+  r677/U100/ZN (XNOR2_X1)                                 0.03       7.23 f
+  r677/SUM[13] (BOOTHMUL_DW01_add_9)                      0.00       7.23 f
+  U13786/ZN (AND2_X1)                                     0.04       7.27 f
+  U11152/ZN (OR2_X2)                                      0.06       7.33 f
+  r681/A[12] (BOOTHMUL_DW01_add_8)                        0.00       7.33 f
+  r681/U63/ZN (XNOR2_X1)                                  0.06       7.39 f
+  r681/U69/ZN (XNOR2_X1)                                  0.06       7.45 f
+  r681/SUM[12] (BOOTHMUL_DW01_add_8)                      0.00       7.45 f
+  U16164/ZN (NAND2_X1)                                    0.03       7.48 r
+  U13550/ZN (NAND2_X1)                                    0.04       7.51 f
+  r685/A[11] (BOOTHMUL_DW01_add_7)                        0.00       7.51 f
+  r685/U1_11/CO (FA_X1)                                   0.11       7.62 f
+  r685/U1_12/CO (FA_X1)                                   0.09       7.71 f
+  r685/U1_13/CO (FA_X1)                                   0.10       7.80 f
+  r685/U83/ZN (NAND2_X1)                                  0.04       7.85 r
+  r685/U55/ZN (NAND3_X1)                                  0.04       7.89 f
+  r685/U126/ZN (NAND2_X1)                                 0.03       7.92 r
+  r685/U48/ZN (NAND3_X1)                                  0.04       7.96 f
+  r685/U128/ZN (XNOR2_X1)                                 0.06       8.01 f
+  r685/U11/ZN (XNOR2_X1)                                  0.05       8.07 f
+  r685/SUM[16] (BOOTHMUL_DW01_add_7)                      0.00       8.07 f
+  U16144/ZN (NAND2_X1)                                    0.03       8.09 r
+  U13632/ZN (NAND2_X1)                                    0.04       8.13 f
+  r689/A[15] (BOOTHMUL_DW01_add_6)                        0.00       8.13 f
+  r689/U1_15/CO (FA_X1)                                   0.11       8.24 f
+  r689/U125/ZN (NAND2_X1)                                 0.04       8.28 r
+  r689/U85/ZN (NAND3_X1)                                  0.04       8.32 f
+  r689/U170/ZN (NAND2_X1)                                 0.03       8.35 r
+  r689/U112/ZN (NAND3_X1)                                 0.04       8.39 f
+  r689/U1_18/CO (FA_X1)                                   0.11       8.50 f
+  r689/U8/Z (XOR2_X1)                                     0.08       8.57 f
+  r689/U9/Z (XOR2_X1)                                     0.07       8.64 f
+  r689/SUM[19] (BOOTHMUL_DW01_add_6)                      0.00       8.64 f
+  U14388/ZN (NAND2_X1)                                    0.03       8.67 r
+  U11586/ZN (NAND2_X1)                                    0.04       8.71 f
+  r693/A[18] (BOOTHMUL_DW01_add_5)                        0.00       8.71 f
+  r693/U113/ZN (NAND2_X1)                                 0.04       8.75 r
+  r693/U86/ZN (NAND3_X1)                                  0.04       8.79 f
+  r693/U119/ZN (NAND2_X1)                                 0.03       8.82 r
+  r693/U121/ZN (NAND3_X1)                                 0.04       8.86 f
+  r693/U1_20/CO (FA_X1)                                   0.11       8.97 f
+  r693/U35/ZN (XNOR2_X1)                                  0.06       9.03 f
+  r693/SUM[21] (BOOTHMUL_DW01_add_5)                      0.00       9.03 f
+  U14053/ZN (AND2_X1)                                     0.04       9.07 f
+  U11158/ZN (OR2_X2)                                      0.06       9.13 f
+  r697/A[20] (BOOTHMUL_DW01_add_4)                        0.00       9.13 f
+  r697/U96/ZN (XNOR2_X1)                                  0.06       9.19 f
+  r697/U43/ZN (XNOR2_X1)                                  0.05       9.24 f
+  r697/SUM[20] (BOOTHMUL_DW01_add_4)                      0.00       9.24 f
+  U16292/ZN (NAND2_X1)                                    0.03       9.27 r
+  U13408/ZN (NAND2_X1)                                    0.03       9.30 f
+  r701/A[19] (BOOTHMUL_DW01_add_3)                        0.00       9.30 f
+  r701/U1_19/CO (FA_X1)                                   0.11       9.41 f
+  r701/U1_20/CO (FA_X1)                                   0.09       9.50 f
+  r701/U1_21/CO (FA_X1)                                   0.10       9.59 f
+  r701/U98/ZN (NAND2_X1)                                  0.04       9.64 r
+  r701/U76/ZN (NAND3_X1)                                  0.04       9.68 f
+  r701/U82/ZN (NAND2_X1)                                  0.03       9.70 r
+  r701/U103/ZN (NAND3_X1)                                 0.04       9.74 f
+  r701/U1_24/S (FA_X1)                                    0.13       9.87 r
+  r701/SUM[24] (BOOTHMUL_DW01_add_3)                      0.00       9.87 r
+  U15948/ZN (NAND2_X1)                                    0.03       9.90 f
+  U11286/ZN (NAND2_X1)                                    0.06       9.96 r
+  r707/A[23] (BOOTHMUL_DW01_add_2)                        0.00       9.96 r
+  r707/U180/ZN (XNOR2_X1)                                 0.07      10.03 r
+  r707/U165/ZN (XNOR2_X1)                                 0.06      10.09 r
+  r707/SUM[23] (BOOTHMUL_DW01_add_2)                      0.00      10.09 r
+  U12549/ZN (NAND2_X1)                                    0.03      10.12 f
+  U11758/ZN (NAND2_X1)                                    0.05      10.17 r
+  r709/A[22] (BOOTHMUL_DW01_add_1)                        0.00      10.17 r
+  r709/U114/ZN (XNOR2_X1)                                 0.07      10.23 r
+  r709/U144/Z (XOR2_X1)                                   0.07      10.30 r
+  r709/SUM[22] (BOOTHMUL_DW01_add_1)                      0.00      10.30 r
+  U16283/ZN (NAND2_X1)                                    0.03      10.33 f
+  U13266/ZN (NAND2_X1)                                    0.05      10.37 r
+  r715/A[21] (BOOTHMUL_DW01_add_0)                        0.00      10.37 r
+  r715/U242/ZN (NAND2_X1)                                 0.04      10.41 f
+  r715/U75/ZN (NAND3_X1)                                  0.04      10.45 r
+  r715/U220/ZN (NAND2_X1)                                 0.03      10.48 f
+  r715/U84/ZN (NAND3_X1)                                  0.03      10.51 r
+  r715/U249/ZN (OAI21_X1)                                 0.04      10.55 f
+  r715/U183/ZN (NAND2_X1)                                 0.04      10.59 r
+  r715/U196/ZN (NOR2_X1)                                  0.02      10.61 f
+  r715/U195/ZN (OAI21_X1)                                 0.06      10.67 r
+  r715/U172/ZN (NOR2_X1)                                  0.03      10.70 f
+  r715/U171/ZN (OAI21_X1)                                 0.05      10.75 r
+  r715/U247/ZN (NOR2_X1)                                  0.03      10.78 f
+  r715/U15/ZN (OAI21_X1)                                  0.05      10.82 r
+  r715/U252/ZN (NAND2_X1)                                 0.03      10.85 f
+  r715/U216/ZN (NAND2_X1)                                 0.04      10.89 r
+  r715/U178/ZN (NAND2_X1)                                 0.04      10.93 f
+  r715/U12/ZN (NAND3_X1)                                  0.04      10.97 r
+  r715/U255/ZN (NAND2_X1)                                 0.03      11.00 f
+  r715/U29/ZN (NAND3_X1)                                  0.04      11.03 r
+  r715/U35/ZN (NAND2_X1)                                  0.03      11.06 f
+  r715/U41/ZN (NAND3_X1)                                  0.03      11.09 r
+  r715/U244/ZN (XNOR2_X1)                                 0.06      11.15 r
+  r715/SUM[31] (BOOTHMUL_DW01_add_0)                      0.00      11.15 r
+  U12104/ZN (OAI21_X1)                                    0.03      11.18 f
+  U12105/ZN (INV_X1)                                      0.02      11.20 r
+  result[62] (out)                                        0.00      11.20 r
+  data arrival time                                                 11.20
+
+  max_delay                                              11.20      11.20
+  output external delay                                   0.00      11.20
+  data required time                                                11.20
+  --------------------------------------------------------------------------
+  data required time                                                11.20
+  data arrival time                                                -11.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

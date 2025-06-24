@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : P4_ADDER
+Version: S-2021.06-SP4
+Date   : Thu Apr  3 23:26:14 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[23] (input port)
+  Endpoint: S[28] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  A[23] (in)                                              0.00       0.00 r
+  CG/A[23] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)       0.00       0.00 r
+  CG/NET_B_23/A (NETWORK_9)                               0.00       0.00 r
+  CG/NET_B_23/U5/ZN (INV_X1)                              0.03       0.03 f
+  CG/NET_B_23/U1/ZN (NAND2_X1)                            0.02       0.05 r
+  CG/NET_B_23/U3/ZN (NAND2_X1)                            0.03       0.08 f
+  CG/NET_B_23/P (NETWORK_9)                               0.00       0.08 f
+  CG/PG_BLOCK0_23_1/Pik (PG_BLOCK_12)                     0.00       0.08 f
+  CG/PG_BLOCK0_23_1/U2/ZN (AOI21_X1)                      0.04       0.12 r
+  CG/PG_BLOCK0_23_1/U1/ZN (INV_X1)                        0.02       0.14 f
+  CG/PG_BLOCK0_23_1/Gout (PG_BLOCK_12)                    0.00       0.14 f
+  CG/PG_BLOCK0_23_2/Gik (PG_BLOCK_11)                     0.00       0.14 f
+  CG/PG_BLOCK0_23_2/U2/ZN (AOI21_X1)                      0.05       0.19 r
+  CG/PG_BLOCK0_23_2/U1/ZN (INV_X1)                        0.02       0.21 f
+  CG/PG_BLOCK0_23_2/Gout (PG_BLOCK_11)                    0.00       0.21 f
+  CG/PG_BLOCK0_23_3/Gik (PG_BLOCK_10)                     0.00       0.21 f
+  CG/PG_BLOCK0_23_3/U2/ZN (AOI21_X1)                      0.05       0.26 r
+  CG/PG_BLOCK0_23_3/U1/ZN (INV_X1)                        0.02       0.29 f
+  CG/PG_BLOCK0_23_3/Gout (PG_BLOCK_10)                    0.00       0.29 f
+  CG/PG_BLOCK0_27_4/Gkj (PG_BLOCK_6)                      0.00       0.29 f
+  CG/PG_BLOCK0_27_4/U3/ZN (NAND2_X1)                      0.03       0.32 r
+  CG/PG_BLOCK0_27_4/U4/ZN (NAND2_X1)                      0.03       0.34 f
+  CG/PG_BLOCK0_27_4/Gout (PG_BLOCK_6)                     0.00       0.34 f
+  CG/G0_27_5/Gik (G_BLOCK_2)                              0.00       0.34 f
+  CG/G0_27_5/U2/ZN (AOI21_X1)                             0.05       0.39 r
+  CG/G0_27_5/U1/ZN (INV_X1)                               0.03       0.43 f
+  CG/G0_27_5/Gout (G_BLOCK_2)                             0.00       0.43 f
+  CG/Co[6] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)       0.00       0.43 f
+  SG/Ci[7] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)       0.00       0.43 f
+  SG/BLOCKS_7/Ci_s (CSB_NBIT4_1)                          0.00       0.43 f
+  SG/BLOCKS_7/V1/SEL (MUX21_NBIT4_1)                      0.00       0.43 f
+  SG/BLOCKS_7/V1/U4/Z (MUX2_X1)                           0.06       0.49 r
+  SG/BLOCKS_7/V1/Y[0] (MUX21_NBIT4_1)                     0.00       0.49 r
+  SG/BLOCKS_7/S_4[0] (CSB_NBIT4_1)                        0.00       0.49 r
+  SG/S[28] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)       0.00       0.49 r
+  S[28] (out)                                             0.00       0.50 r
+  data arrival time                                                  0.50
+
+  max_delay                                               0.50       0.50
+  output external delay                                   0.00       0.50
+  data required time                                                 0.50
+  --------------------------------------------------------------------------
+  data required time                                                 0.50
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

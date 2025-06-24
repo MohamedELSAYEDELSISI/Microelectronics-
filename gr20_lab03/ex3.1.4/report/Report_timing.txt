@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Logix_control_rf
+Version: S-2021.06-SP4
+Date   : Thu Apr 24 18:42:22 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: cwp_reg[0] (rising edge-triggered flip-flop)
+  Endpoint: addr_1[4] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Logix_control_rf   5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  cwp_reg[0]/CK (DFF_X1)                   0.00       0.00 r
+  cwp_reg[0]/Q (DFF_X1)                    0.13       0.13 r
+  U1012/ZN (NOR2_X1)                       0.05       0.18 f
+  U1011/ZN (AOI21_X1)                      0.06       0.24 r
+  U1010/ZN (INV_X1)                        0.03       0.27 f
+  U1009/ZN (NAND2_X1)                      0.04       0.31 r
+  U1004/ZN (INV_X1)                        0.03       0.33 f
+  U1003/ZN (OAI21_X1)                      0.04       0.38 r
+  U1002/ZN (OAI21_X1)                      0.04       0.42 f
+  U995/ZN (OAI21_X1)                       0.05       0.47 r
+  U994/ZN (OAI21_X1)                       0.04       0.50 f
+  U993/ZN (XNOR2_X1)                       0.05       0.56 r
+  U992/Z (XOR2_X1)                         0.14       0.69 r
+  addr_1[4] (out)                          0.00       0.70 r
+  data arrival time                                   0.70
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

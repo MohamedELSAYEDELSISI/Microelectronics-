@@ -1,0 +1,24 @@
+analyze -library WORK -format vhdl {registerfile.vhd}
+elaborate register_file -architecture A -library WORK
+compile -exact_map
+
+report_timing > non-optimized_timing.txt
+report_area > non-optimized_area.txt
+
+#@ ##############################################################################
+
+create_clock -name "CLK" -period $period CLK
+compile -exact_map
+
+
+#@ ##############################################################################
+
+set_max_delay $period -from [all_inputs] -to [all_outputs]
+compile -exact_map
+
+report_timing > Optimized_timing.txt
+report_area > Optimized_area.txt
+
+
+
+
